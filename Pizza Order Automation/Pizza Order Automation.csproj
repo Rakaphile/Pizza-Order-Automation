@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D01C5D7A-5B22-4A7D-87CD-F398412A53FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pizza_Order_Automation</RootNamespace>
+    <AssemblyName>Pizza Order Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddEmployee.Designer.cs">
+      <DependentUpon>fAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCrustAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCrustAdd.Designer.cs">
+      <DependentUpon>fCrustAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDrink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDrink.Designer.cs">
+      <DependentUpon>fDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDrinkAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDrinkAdd.Designer.cs">
+      <DependentUpon>fDrinkAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployeeLogin.Designer.cs">
+      <DependentUpon>fEmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEmployeeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployeeManagement.Designer.cs">
+      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEmployeeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployeeScreen.Designer.cs">
+      <DependentUpon>fEmployeeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExtraAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExtraAdd.Designer.cs">
+      <DependentUpon>fExtraAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExtras.Designer.cs">
+      <DependentUpon>fExtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fOrderScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOrderScreen.Designer.cs">
+      <DependentUpon>fOrderScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPasswordChange.Designer.cs">
+      <DependentUpon>fPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPizza.Designer.cs">
+      <DependentUpon>fPizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProductPizzaAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProductPizzaAdd.Designer.cs">
+      <DependentUpon>fProductPizzaAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProductToppingAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProductToppingAdd.Designer.cs">
+      <DependentUpon>fProductToppingAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSauce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSauce.Designer.cs">
+      <DependentUpon>fSauce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSizeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSizeAdd.Designer.cs">
+      <DependentUpon>fSizeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStart.Designer.cs">
+      <DependentUpon>fStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThickAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThickAdd.Designer.cs">
+      <DependentUpon>fThickAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUpdateInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUpdateInformation.Designer.cs">
+      <DependentUpon>fUpdateInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUpdateProduct.Designer.cs">
+      <DependentUpon>fUpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSauceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSauceAdd.Designer.cs">
+      <DependentUpon>fSauceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaOrdersDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaOrdersDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaOrdersDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaOrdersDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaOrdersDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaOrdersDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="temadeneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temadeneme.Designer.cs">
+      <DependentUpon>temadeneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tProduct.Designer.cs">
+      <DependentUpon>tProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fAddEmployee.resx">
+      <DependentUpon>fAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCrustAdd.resx">
+      <DependentUpon>fCrustAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDrink.resx">
+      <DependentUpon>fDrink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDrinkAdd.resx">
+      <DependentUpon>fDrinkAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEmployeeLogin.resx">
+      <DependentUpon>fEmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEmployeeManagement.resx">
+      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEmployeeScreen.resx">
+      <DependentUpon>fEmployeeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExtraAdd.resx">
+      <DependentUpon>fExtraAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExtras.resx">
+      <DependentUpon>fExtras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOrderScreen.resx">
+      <DependentUpon>fOrderScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPasswordChange.resx">
+      <DependentUpon>fPasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPizza.resx">
+      <DependentUpon>fPizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProductPizzaAdd.resx">
+      <DependentUpon>fProductPizzaAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProductToppingAdd.resx">
+      <DependentUpon>fProductToppingAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSauce.resx">
+      <DependentUpon>fSauce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSizeAdd.resx">
+      <DependentUpon>fSizeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStart.resx">
+      <DependentUpon>fStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThickAdd.resx">
+      <DependentUpon>fThickAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUpdateInformation.resx">
+      <DependentUpon>fUpdateInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUpdateProduct.resx">
+      <DependentUpon>fUpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSauceAdd.resx">
+      <DependentUpon>fSauceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="temadeneme.resx">
+      <DependentUpon>temadeneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tProduct.resx">
+      <DependentUpon>tProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PizzaOrdersDBDataSet.xsc">
+      <DependentUpon>PizzaOrdersDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PizzaOrdersDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PizzaOrdersDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PizzaOrdersDBDataSet.xss">
+      <DependentUpon>PizzaOrdersDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PizzaOrdersDBDataSet1.xsc">
+      <DependentUpon>PizzaOrdersDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PizzaOrdersDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PizzaOrdersDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PizzaOrdersDBDataSet1.xss">
+      <DependentUpon>PizzaOrdersDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PizzaOrdersDBDataSet2.xsc">
+      <DependentUpon>PizzaOrdersDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PizzaOrdersDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PizzaOrdersDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PizzaOrdersDBDataSet2.xss">
+      <DependentUpon>PizzaOrdersDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
